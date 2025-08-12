@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings Rahasia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="judul">Halaman Rahasia</h1>
+        <p>Ubah sound & metode di sini:</p>
+
+        <label>Sound 1 (Alarm):</label>
+        <input type="text" id="sound1" placeholder="Link/URL sound alarm">
+        <br>
+        <label>Sound 2 (Success):</label>
+        <input type="text" id="sound2" placeholder="Link/URL sound success">
+        <br>
+        <button id="save">Simpan</button>
+        <button onclick="window.location.href='index.html'">Kembali</button>
+    </div>
+
+    <script>
+        document.getElementById("save").addEventListener("click", function() {
+            localStorage.setItem("sound1", document.getElementById("sound1").value);
+            localStorage.setItem("sound2", document.getElementById("sound2").value);
+            alert("Sound berhasil disimpan!");
+        });
+    </script>
+</body>
+</html>
