@@ -1,5 +1,5 @@
 let unlockClickCount = 0;
-let alarmSrc = "alarm.mp3";
+let alarmSrc = "https://files.catbox.moe/v8f40o.mp3");";
 let successSrc = "success.mp3";
 
 // Ambil dari localStorage kalau ada
